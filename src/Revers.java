@@ -16,7 +16,9 @@ public class Revers {
         arr[b]=a;
         b--;
 
-    }}
+    }
+
+    }
     public void shiftRight(){
         int i;
         for (i=arr.length-1; i >0 ; i--) {
@@ -42,16 +44,17 @@ public class Revers {
        }
     }
 
+
     public static void main(String []args)
     {
       Revers o=new Revers();
-
+        o.revers();
         System.out.println(Arrays.toString(arr));
 
         o.shiftleft();
         System.out.println(Arrays.toString(arr));
-        o.shiftRight();
-
+         o.shiftRight();
+        System.out.println(Arrays.toString(arr));
 
 
     }
